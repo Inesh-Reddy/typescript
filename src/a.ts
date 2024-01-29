@@ -1,29 +1,29 @@
-type greetString = number|string;
-function greet(id: greetString){
+// type greetString = number|string;
+// function greet(id: greetString){
 
+// }
+
+// greet("Hello iam String");
+interface User{
+    firstName:string,
+    lastName:string,
+    email?:string,
+    age:number
 }
-
-greet("Hello iam String");
-// interface User{
-//     firstName:string,
-//     lastName:string,
-//     email?:string,
-//     age:number
-// }
-// function isLeagal(user: User){
-//     if(user.age>=18){
-//         return true;
-//     }
-//     else{
-//         return false
-//     }
-// }
-// isLeagal({
-//     firstName:"Inesh",
-//     lastName:"Reddy",
-//     email:"abc@gmail.com",
-//     age:19
-// })
+function isLeagal(user: User){
+    if(user.age>=18){
+        return true;
+    }
+    else{
+        return false
+    }
+}
+console.log(isLeagal({
+    firstName:"Inesh",
+    lastName:"Reddy",
+    email:"abc@gmail.com",
+    age:19
+}))
 // function delayedCall(fn: () => void) {
 //     setTimeout(fn, 1000);
 // }
