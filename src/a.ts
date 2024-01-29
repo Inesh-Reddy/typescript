@@ -7,7 +7,7 @@
 interface User{
     firstName:string,
     lastName:string,
-    email?:string,
+    email:string,
     age:number
 }
 function isLeagal(user: User){
